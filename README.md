@@ -6,14 +6,12 @@ SpringBoot整合SpingSecurityOauth2，并实现授权码模式。
 ## 实验步骤
 
 1. 导入依赖
-
 ```xml
- <properties>
+    <properties>
         <java.version>1.8</java.version>
         <!--SpringCloud版本-->
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
-
     <dependencies>
         <!--oauth2依赖-->
         <dependency>
