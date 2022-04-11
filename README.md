@@ -283,9 +283,9 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 登陆的时候，有遇到了一个问题
 ![](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112056182.png)
 检查代码，在自定义的user并实现UserDetails的时候，isAccountNonLocked,改为true就可以了。后来控制台由显示密码为空，吭哧吭哧，有去改了user中的方法。终于进来了
-<img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212251216.png" alt="image-20220411212251216" style="zoom:50%;" />
+![](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112145432.png)
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112124345.png" alt="image-20220411212451486" style="zoom:50%;" />
-<img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212626839.png" alt="image-20220411212626839" style="zoom:50%;" />
+![](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112144313.png)
 终于拿到授权码了，5Z8hqu。
 
 拿到授权码，我们再去授权服务器发送post请求，获取token，令牌。去PostMan发送POST请求
