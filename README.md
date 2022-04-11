@@ -295,6 +295,10 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112144280.png" alt="image-20220411214402141" style="zoom:50%;" />
 
+![image-20220411221958599](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112224500.png)
+
+![image-20220411222016227](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112225210.png)
+
 测试结束
 
 ## SpringSecurity Oauth2的架构
