@@ -308,3 +308,22 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 2. 认证服务器通过Authorization Endpoint进行授权，并通过AuthorizationServerTokenServices生成授权码并返回给客户端。
 
 3. 客户端拿到授权码去认证服务器通过Token Endpoint调用AuthorizationServerTokenServices生成Token并返回给客户端。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
