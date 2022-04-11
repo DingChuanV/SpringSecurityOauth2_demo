@@ -148,37 +148,37 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return authorities;
     }
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return null;
+        return username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }
 ```
@@ -282,7 +282,11 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 
 登陆的时候，有遇到了一个问题
 ![](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112056182.png)
-检查代码，在自定义的user并实现UserDetails的时候，isAccountNonLocked,改为true就可以了。
+检查代码，在自定义的user并实现UserDetails的时候，isAccountNonLocked,改为true就可以了。后来控制台由显示密码为空，吭哧吭哧，有去改了user中的方法。终于进来了
+<img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212251216.png" alt="image-20220411212251216" style="zoom:50%;" />
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112124345.png" alt="image-20220411212451486" style="zoom:50%;" />
+<img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212626839.png" alt="image-20220411212626839" style="zoom:50%;" />
+
 
 ## SpringSecurity Oauth2的架构
 
