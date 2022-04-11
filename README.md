@@ -286,7 +286,16 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 <img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212251216.png" alt="image-20220411212251216" style="zoom:50%;" />
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112124345.png" alt="image-20220411212451486" style="zoom:50%;" />
 <img src="/Users/wanglufei/Library/Application Support/typora-user-images/image-20220411212626839.png" alt="image-20220411212626839" style="zoom:50%;" />
+终于拿到授权码了，5Z8hqu。
 
+拿到授权码，我们再去授权服务器发送post请求，获取token，令牌。去PostMan发送POST请求
+
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112141005.png" alt="image-20220411214124887" style="zoom:50%;" />
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112142165.png" alt="image-20220411214232114" style="zoom:50%;" />
+
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112144280.png" alt="image-20220411214402141" style="zoom:50%;" />
+
+测试结束
 
 ## SpringSecurity Oauth2的架构
 
