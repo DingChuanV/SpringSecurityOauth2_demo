@@ -267,7 +267,21 @@ public class UserController {
 ## 实验结果
 1. 测试
 
-获取授权码，根据
+第一次运行，报错，显示SpringBoot和SpringCloud版本不兼容导致，所以要们降版本，要么升版本。
+![image-20220411204301288](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112043460.png)
+
+最终我降了SpringBoot版本到2.1.8.RELEASE，成功运行。
+
+获取授权码，根据配置 
+
+```http
+http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirect_url=http://www.baidu.com&scope=all
+```
+成功获取
+![image-20220411205039785](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112050306.png)
+```
+
+
 
 
 ## SpringSecurity Oauth2的架构
