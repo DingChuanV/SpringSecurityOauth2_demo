@@ -41,7 +41,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 //配置访问token的有效期
                 .accessTokenValiditySeconds(3600)
                 //配置重定向的跳转，用于授权成功之后的跳转
-                .redirectUris("http:www.baidu.com")
+                .redirectUris("http://www.baidu.com")
                 //作用域
                 .scopes("all")
                 //Grant_type  授权码模式

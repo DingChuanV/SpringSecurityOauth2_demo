@@ -2,7 +2,6 @@ package com.uin.pojo;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.List;
 public class User implements UserDetails {
     private String username;
     private String password;
-    private List<GrantedAuthority> authorities;//权限
+    private List<GrantedAuthority> authorities;//授权的
 
 
     public User(String username, String password, List<GrantedAuthority> authorities) {
@@ -26,36 +25,36 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return authorities;
     }
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return null;
+        return username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }

@@ -23,7 +23,7 @@ public class ResourcesServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         //所有的访问都需要认证访问
         http.authorizeRequests().anyRequest().authenticated();
-        //唯独user 可以访问
+        //唯独user 可以访问 放行我们的资源
         http.requestMatchers().antMatchers("/user/**");
     }
 }

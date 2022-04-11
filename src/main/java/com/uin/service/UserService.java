@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class UserService implements UserDetailsService {
 
     @Autowired
-    PasswordEncoder passwordEncoder;
+    private PasswordEncoder passwordEncoder;
 
     /**
      * 自定义登陆方法
@@ -31,6 +31,7 @@ public class UserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         String password = passwordEncoder.encode("123456");
+        System.out.println(password);
         return new User("admin", password,
                 AuthorityUtils.commaSeparatedStringToAuthorityList("admin"));
     }
