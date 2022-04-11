@@ -279,10 +279,10 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 ```
 成功获取
 ![image-20220411205039785](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112050306.png)
-```
 
-
-
+登陆的时候，有遇到了一个问题
+![](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112056182.png)
+检查代码，在自定义的user并实现UserDetails的时候，isAccountNonLocked,改为true就可以了。
 
 ## SpringSecurity Oauth2的架构
 
