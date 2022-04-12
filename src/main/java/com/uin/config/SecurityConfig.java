@@ -2,6 +2,7 @@ package com.uin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -16,6 +17,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    /**
+     * OAuth2AuthenticationManager 来处理我们密码模式的密码
+     *
+     * @return org.springframework.security.authentication.AuthenticationManager
+     * @author wanglufei
+     * @date 2022/4/11 10:44 PM
+     */
+    @Bean
+    public AuthenticationManager authenticationManager() throws Exception {
+        return super.authenticationManager();
+    }
 
     /**
      * 自定义加密逻辑

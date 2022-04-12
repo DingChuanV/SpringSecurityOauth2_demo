@@ -1,5 +1,7 @@
 # SpringSecurityOauth2_demo
-SpringBoot整合SpingSecurityOauth2，并实现授权码模式。
+SpringBoot整合SpingSecurityOAuth2，并实现授权码模式。
+
+新增内容SpringSecurityOAuth2整合Jwt。
 
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112024625.png" alt="image-20220411175444108" style="zoom:50%;" />
 
@@ -312,6 +314,12 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 2. 认证服务器通过Authorization Endpoint进行授权，并通过AuthorizationServerTokenServices生成授权码并返回给客户端。
 
 3. 客户端拿到授权码去认证服务器通过Token Endpoint调用AuthorizationServerTokenServices生成Token并返回给客户端。
+
+# SpringSecurityOAuth2整合Jwt
+
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204121619180.png" alt="image-20220412161347077" style="zoom:50%;" />
+
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204121619959.png" alt="image-20220412161625044" style="zoom:50%;" />
 
 
 
