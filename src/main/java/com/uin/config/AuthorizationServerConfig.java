@@ -96,7 +96,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 //作用域
                 .scopes("all")
                 //Grant_type  授权码模式
-                .authorizedGrantTypes("password");
+                // 密码模式和刷新令牌模式
+                .authorizedGrantTypes("password","refresh_token","authorization_code");
     }
 
 }
