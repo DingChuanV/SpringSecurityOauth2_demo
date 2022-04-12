@@ -3,6 +3,10 @@ SpringBoot整合SpingSecurityOauth2，并实现授权码模式。
 
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112024625.png" alt="image-20220411175444108" style="zoom:50%;" />
 
+实现流程
+
+<img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112342648.png" alt="image-20220411173158704" style="zoom:50%;" />
+
 ## 实验步骤
 
 1. 导入依赖
