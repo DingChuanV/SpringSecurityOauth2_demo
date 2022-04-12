@@ -40,4 +40,16 @@ public class JwtConfig {
         jwtAccessTokenConverter.setSigningKey("test_key");
         return jwtAccessTokenConverter;
     }
+
+    /**
+     * @return com.uin.config.JwtTokenEnhancer
+     * @author wanglufei
+     * @date 2022/4/12 4:27 PM
+     */
+    @Bean
+    public JwtTokenEnhancer jwtTokenEnhancer() {
+        return new JwtTokenEnhancer();
+    }
+
+
 }
