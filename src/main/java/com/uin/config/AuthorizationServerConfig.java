@@ -66,7 +66,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 //配置存储令牌策略
                 .tokenStore(tokenStore)
                 //accessToken要和JwtToken进行相互转换
-                .accessTokenConverter(jwtAccessTokenConverter);
+                .accessTokenConverter(jwtAccessTokenConverter)
+                .tokenEnhancer(tokenEnhancerChain);
     }
 
 
