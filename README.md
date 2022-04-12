@@ -9,7 +9,7 @@ SpringBoot整合SpingSecurityOAuth2，并实现授权码模式。
 
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112342648.png" alt="image-20220411173158704" style="zoom:50%;" />
 
-## 实验步骤
+## 🩴实验步骤
 
 1. 导入依赖
 ```xml
@@ -268,7 +268,7 @@ public class UserController {
 
 }
 ```
-## 实验结果
+## 🥿实验结果
 1. 测试
 
 第一次运行，报错，显示SpringBoot和SpringCloud版本不兼容导致，所以要们降版本，要么升版本。
@@ -305,7 +305,7 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 
 测试结束
 
-## SpringSecurity Oauth2的架构
+## 👠SpringSecurity Oauth2的架构
 
 ![image-20220411181042001](https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204112015357.png)
 
@@ -315,7 +315,7 @@ http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirec
 
 3. 客户端拿到授权码去认证服务器通过Token Endpoint调用AuthorizationServerTokenServices生成Token并返回给客户端。
 
-# SpringSecurityOAuth2整合Jwt
+# 👡SpringSecurityOAuth2整合Jwt
 
 <img src="https://bearbrick0.oss-cn-qingdao.aliyuncs.com/images/img/202204121619180.png" alt="image-20220412161347077" style="zoom:50%;" />
 
